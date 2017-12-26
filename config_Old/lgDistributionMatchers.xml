@@ -1,0 +1,20 @@
+<xml>
+	<distributions>
+		<distribution>
+			<match>Sonnerie Generale</match>
+			<replaceby>Broadcast</replaceby>
+		</distribution>
+		<distribution>
+			<match>Temps de repos</match>
+			<replaceby>Longest Idle Time</replaceby>
+		</distribution>		
+		<distribution>
+			<match>Cyclique</match>
+			<replaceby>Circular</replaceby>
+		</distribution>
+		<distribution>
+			<match>Ordonné</match>
+			<replaceby>Top Down</replaceby>
+		</distribution>
+	</distributions>
+</xml>

@@ -1,0 +1,20 @@
+<xml>
+	<notifications>
+		<notification>
+			<match>Visuelle</match>
+			<replaceby>Visual Alert</replaceby>
+		</notification>
+		<notification>
+			<match>Sonore</match>
+			<replaceby>Audio Alert</replaceby>
+		</notification>		
+		<notification>
+			<match>Les deux</match>
+			<replaceby>Audio and Visual Alert</replaceby>
+		</notification>
+		<notification>
+			<match>Rien</match>
+			<replaceby>No Alert</replaceby>
+		</notification>
+	</notifications>
+</xml>

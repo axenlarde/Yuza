@@ -1,0 +1,61 @@
+<xml>
+	<csss>
+		<css>
+			<match>Urgences_Uniquement</match>
+			<replaceby>css_user_fr_emergency_local</replaceby>
+		</css>
+		<css>
+			<match>Interne</match>
+			<replaceby>css_user_fr_internal</replaceby>
+		</css>
+		<css>
+			<match>National</match>
+			<replaceby>css_user_fr_metropolitain_fixes</replaceby>
+		</css>
+		<css>
+			<match>National_et_Mobile</match>
+			<replaceby>css_user_fr_metropolitain_mobile</replaceby>
+		</css>
+		<css>
+			<match>National_et_Mobile_et_Surtaxe</match>
+			<replaceby>css_user_fr_metropolitain_mobile_toll</replaceby>
+		</css>
+		<css>
+			<match>National_et_Mobile_et_DOM</match>
+			<replaceby>css_user_fr_national</replaceby>
+		</css>
+		<css>
+			<match>National_et_Mobile_et_DOM_et_Surtaxe</match>
+			<replaceby>css_user_fr_national_limitrophe</replaceby>
+		</css>
+		<css>
+			<match>National_et_Mobile_et_Limitrophe</match>
+			<replaceby>css_user_fr_metropolitain_limitrophe</replaceby>
+		</css>
+		<css>
+			<match>DOM</match>
+			<replaceby>css_user_fr_DOM_only</replaceby>
+		</css>
+		<css>
+			<match>National_et_Mobile_et_DOM_et_Limitrophe</match>
+			<replaceby>css_user_fr_national</replaceby>
+		</css>
+		<css>
+			<match>National_et_Mobile_et_DOM_et Limitrophe</match>
+			<replaceby>css_user_fr_national</replaceby>
+		</css>
+		<css>
+			<match>International_Hors_Surtaxe</match>
+			<replaceby>css_user_fr_international_hors_surtaxe</replaceby>
+		</css>
+		<css>
+			<match>International_Hors Surtaxe</match>
+			<replaceby>css_user_fr_international_hors_surtaxe</replaceby>
+		</css>
+		<css>
+			<match>Tous_les_numeros</match>
+			<replaceby>css_user_fr_no_restrictions</replaceby>
+		</css>
+	</csss>
+</xml>
+

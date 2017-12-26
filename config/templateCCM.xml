@@ -1,0 +1,536 @@
+<!--Fichier de paramétrage de la collecte-->
+<!--Rappel :
+Nom/Description du site = desc
+Surnom du site = cucm.sitename
+Pays = country
+sda = sda
+E164 prefixe = E164
+Num standard = standard
+Tranche SDA = tranche
+
+Texte libre à mettre entre guillement simple, exemple = 'test'
+utiliser des + pour séparer les éléments
+-->
+<xml>
+	<sites>
+		<site><!--Type 1-->
+			<location>
+				<name>'L_'+cucm.sitename</name>
+				<audiobandwidth>cucm.audiobandwidth</audiobandwidth>
+				<videobandwidth>cucm.videobandwidth</videobandwidth>
+			</location>
+			<region>
+				<name>'R_'+cucm.sitename</name>
+				<defaultcodec>''</defaultcodec>
+				<videobandwidth>'384'</videobandwidth>
+				<g711>'R_'+cucm.sitename</g711>
+				<g711>'CERTI_G711_Servers'</g711>
+				<g711>'VCS'</g711>
+			</region>
+			<srstreference>
+				<name>'SRST_'+cucm.sitename</name>
+				<ipaddress>*1S/*cucm.voicegatewayip</ipaddress>
+			</srstreference>
+			<devicepool>
+				<name>'DP_'+cucm.sitename</name>
+				<region>'R_'+cucm.sitename</region>
+				<location>'L_'+cucm.sitename</location>
+				<datetimesetting>'France'</datetimesetting>
+				<mediaressourcegrouplist>'MRGL_'+cucm.sitename</mediaressourcegrouplist>
+				<networklocale>'France'</networklocale>
+				<srstreference>'SRST_'+cucm.sitename</srstreference>
+				<callmanagergroup>site.cmg</callmanagergroup><!--site.cmg is a special regex. It means that we have to get the callManager group from the site object-->
+				<localroutegroup>'RG_'+cucm.sitename</localroutegroup><!--One or more route group-->
+				<localroutegroup>'RG_Test'</localroutegroup><!--One or more route group-->
+				<physicallocation>'PL_'+cucm.sitename</physicallocation>
+				<devicemobilitygroup>'dmg_France'</devicemobilitygroup>
+				<devicemobilitycss>'css_device_'+cucm.sitename</devicemobilitycss>
+			</devicepool>
+			<conferencebridge>
+				<name>'CFB_'+cucm.sitename</name>
+				<description>'CFB_'+cucm.sitename</description>
+				<devicepoolname>'DP_'+cucm.sitename</devicepoolname>
+				<locationname>'L_'+cucm.sitename</locationname>
+				<commondeviceconfigname>''</commondeviceconfigname>
+			</conferencebridge>
+			<mediaressourcegroup>
+				<name>'MRG_CFB_'+cucm.sitename</name>
+				<description>'MRG_CFB_'+cucm.sitename</description>
+				<multicast>'false'</multicast><!--true,false-->
+				<member>'CFB_'+cucm.sitename</member>
+			</mediaressourcegroup>
+			<mediaressourcegrouplist>
+				<name>'MRGL_'+cucm.sitename</name>
+				<member>'MRG_CFB_'+cucm.sitename</member><!--One or more members-->
+				<member>'MRG_CFB_CentralSite2'</member><!--One or more members-->
+				<member>'MRG_CFB_CentralSite'</member><!--One or more members-->
+				<member>'MRG_MOH-ANN_CentralSite2'</member><!--One or more members-->
+				<member>'MRG_MOH-ANN_CentralSite1'</member><!--One or more members-->
+			</mediaressourcegrouplist>
+			<partition>
+				<name>'p_site_'+cucm.sitename</name>
+				<description>'p_site'+cucm.sitename</description>
+			</partition>
+			<callingsearchspace>
+				<name>'css_device_'+cucm.sitename</name>
+				<description>'css_device_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_site_'+cucm.sitename</P>
+				<P>'p_cuc'</P>
+				<P>'p_fr_dialplan_btip'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+			</callingsearchspace>
+			<callingsearchspace>
+				<name>'css_device_ra_'+cucm.sitename</name>
+				<description>'css_device_ra_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_ra'</P>
+				<P>'p_fr_dialplan_local'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+			</callingsearchspace>
+			<callingsearchspace>
+				<name>'css_device_ra_'+cucm.sitename+'_Prosodie'</name>
+				<description>'css_device_ra_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_ra'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+				<P>'p_cuc'</P>
+			</callingsearchspace>
+			<trunksip>
+				<name>'CNAF-'+cucm.sitename+'-'+cucm.sitedescription+'-GW'</name>
+				<description>'Gateway '+cucm.sitename+' '+cucm.sitedescription</description>
+				<devicepool>'DP_'+cucm.sitename</devicepool>
+				<location>'L_'+cucm.sitename</location>
+				<commondeviceconfig>''</commondeviceconfig>
+				<css>'css_internal'</css>
+				<securityprofile>'Non Secure SIP Trunk Profile'</securityprofile>
+				<outboundcalledptcss>'css_localgw_calledpartytransform'</outboundcalledptcss>
+				<outboundusedevicepoolcalledptransformcss>'false'</outboundusedevicepoolcalledptransformcss><!--true,false-->
+				<outboundcallingptcss>'css_localgw_callingpartytransform'</outboundcallingptcss>
+				<outboundusedevicepoolcallingptransformcss>'false'</outboundusedevicepoolcallingptransformcss><!--true,false-->
+				<destination>*1S/*cucm.voicegatewayip:5060</destination><!--One or more destination-->
+				<reroutingcss>'css_internal'</reroutingcss>
+				<subscribecss>'css_internal'</subscribecss>
+				<sipprofile>'GW SIP Profile Early Media'</sipprofile>
+				<inboundprefix>''</inboundprefix>
+				<inboundstripdigits>'0'</inboundstripdigits>
+				<inboundcallingptcss>'css_localgw_inbound_callingpartytransform'</inboundcallingptcss>
+				<inboundusedevicepoolcallingptransformcss>'false'</inboundusedevicepoolcallingptransformcss><!--true,false-->
+			</trunksip>
+			<routegroup>
+				<name>'RG_'+cucm.sitename</name>
+				<distributionalgorithm>'Top Down'</distributionalgorithm>
+				<member>'CNAF-'+cucm.sitename+'-'+cucm.sitedescription+'-GW'</member><!--One or more member-->
+			</routegroup>
+			<vg>
+				<name>'SKIGW'+cucm.mac*10*</name>
+				<description>'VG_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<product>cnaf.voicegatewaytype</product>
+				<protocol>'SCCP'</protocol>
+				<callmanagergroupname>site.cmg</callmanagergroupname>
+				<t38enable>'true'</t38enable>
+			</vg>
+			<translationpattern>
+				<pattern>'11[259]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'0.11[259]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>'PreDot'</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'1[578]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'0.1[578]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>'PreDot'</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'*XXXX'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_internal'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>''</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>cucm.internalprefix+'XXXX'</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'\'+cnaf.sdarange</pattern><!--cnaf.sdarange is a special regex. It means that this particular translation pattern has to be duplicate as many times as the number of sda range-->
+				<description>'Forcage '+cucm.sitedescription+' '+cucm.sitename</description>
+				<routepartition>'p_forcedonnet'</routepartition>
+				<callingsearchspace>'css_internal'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>''</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>cucm.internalprefix+'XXXX'</calledpartytransformmask>
+			</translationpattern>
+			<physicallocation>
+				<name>'PL_'+cucm.sitename</name>
+				<description>cucm.sitename+' '+cucm.sitedescription</description>
+			</physicallocation>
+			<devicemobilityinfo>
+				<name>'Net_'+cucm.sitename+'-Phone'</name>
+				<subnet>*1S/*cucm.voicenetworkip</subnet>
+				<subnetmask>*2S/*cucm.voicenetworkip</subnetmask><!--Has to be a number of bit-->
+				<devicepool>'DP_'+cucm.sitename</devicepool><!--One or more device pool-->
+			</devicemobilityinfo>
+			<devicemobilityinfo>
+				<name>'Net_'+cucm.sitename+'-CUPC'</name>
+				<subnet>*1S/*cucm.datanetworkip</subnet>
+				<subnetmask>*2S/*cucm.datanetworkip</subnetmask><!--Has to be a number of bit-->
+				<devicepool>'DP_'+cucm.sitename</devicepool><!--One or more device pool-->
+			</devicemobilityinfo>
+		</site>
+		<site><!--Type 2-->
+			<location>
+				<name>'L_'+cucm.sitename</name>
+				<audiobandwidth>cucm.audiobandwidth</audiobandwidth>
+				<videobandwidth>cucm.videobandwidth</videobandwidth>
+			</location>
+			<region>
+				<name>'R_'+cucm.sitename</name>
+				<defaultcodec>''</defaultcodec>
+				<videobandwidth>'384'</videobandwidth>
+				<g711>'R_'+cucm.sitename</g711>
+				<g711>CERTI_G711_Servers</g711>
+				<g711>VCS</g711>
+			</region>
+			<devicepool>
+				<name>'DP_'+cucm.sitename</name>
+				<region>'R_'+cucm.sitename</region>
+				<location>'L_'+cucm.sitename</location>
+				<datetimesetting>'France'</datetimesetting>
+				<mediaressourcegrouplist>'MRGL_'+cucm.sitename</mediaressourcegrouplist>
+				<networklocale>'France'</networklocale>
+				<srstreference>'Disable'</srstreference>
+				<callmanagergroup>site.cmg</callmanagergroup>
+				<localroutegroup>'rg_sfr'</localroutegroup>
+				<physicallocation>'PL_'+cucm.sitename</physicallocation>
+				<devicemobilitygroup>'dmg_France'</devicemobilitygroup>
+				<devicemobilitycss>'css_device_'+cucm.sitename</devicemobilitycss>
+			</devicepool>
+			<mediaressourcegrouplist>
+				<name>'MRGL_'+cucm.sitename</name>
+				<member>'MRG_CFB_CentralSite2'</member><!--One or more members-->
+				<member>'MRG_CFB_CentralSite'</member><!--One or more members-->
+				<member>'MRG_MOH-ANN_CentralSite2'</member><!--One or more members-->
+				<member>'MRG_MOH-ANN_CentralSite1'</member><!--One or more members-->
+			</mediaressourcegrouplist>
+			<partition>
+				<name>'p_site_'+cucm.sitename</name>
+				<description>'p_site'+cucm.sitename</description>
+			</partition>
+			<callingsearchspace>
+				<name>'css_device_'+cucm.sitename</name>
+				<description>'css_device_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_site_'+cucm.sitename</P>
+				<P>'p_cuc'</P>
+				<P>'p_fr_dialplan_btip'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+			</callingsearchspace>
+			<callingsearchspace>
+				<name>'css_device_ra_'+cucm.sitename</name>
+				<description>'css_device_ra_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_ra'</P>
+				<P>'p_fr_dialplan_local'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+			</callingsearchspace>
+			<callingsearchspace>
+				<name>'css_device_ra_'+cucm.sitename+'_Prosodie'</name>
+				<description>'css_device_ra_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_ra'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+				<P>'p_cuc'</P>
+			</callingsearchspace>
+			<vg>
+				<name>'SKIGW'+cucm.mac*10*</name>
+				<description>'VG_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<product>cnaf.voicegatewaytype</product>
+				<protocol>'SCCP'</protocol>
+				<callmanagergroupname>site.cmg</callmanagergroupname>
+				<t38enable>'true'</t38enable>
+			</vg>
+			<translationpattern>
+				<pattern>'11[259]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'0.11[259]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>'PreDot'</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'1[578]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'0.1[578]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>'PreDot'</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'*XXXX'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_internal'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>''</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>cucm.internalprefix+'XXXX'</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'\'+cnaf.sdarange</pattern><!--cnaf.sdarange is a special regex. It means that this particular translation pattern has to be duplicate as many times as the number of sda range-->
+				<description>'Forcage '+cucm.sitedescription+' '+cucm.sitename</description>
+				<routepartition>'p_forcedonnet'</routepartition>
+				<callingsearchspace>'css_internal'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>''</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>cucm.internalprefix+'XXXX'</calledpartytransformmask>
+			</translationpattern>
+			<physicallocation>
+				<name>'PL_'+cucm.sitename</name>
+				<description>cucm.sitename+' '+cucm.sitedescription</description>
+			</physicallocation>
+			<devicemobilityinfo>
+				<name>'Net_'+cucm.sitename+'-Phone'</name>
+				<subnet>*1S/*cucm.voicenetworkip</subnet>
+				<subnetmask>*2S/*cucm.voicenetworkip</subnetmask><!--Has to be a number of bit-->
+				<devicepool>'DP_'+cucm.sitename</devicepool><!--One or more device pool-->
+			</devicemobilityinfo>
+			<devicemobilityinfo>
+				<name>'Net_'+cucm.sitename+'-CUPC'</name>
+				<subnet>*1S/*cucm.datanetworkip</subnet>
+				<subnetmask>*2S/*cucm.datanetworkip</subnetmask><!--Has to be a number of bit-->
+				<devicepool>'DP_'+cucm.sitename</devicepool><!--One or more device pool-->
+			</devicemobilityinfo>
+		</site>
+		<site><!--Type 3-->
+			<location>
+				<name>'L_'+cucm.sitename</name>
+				<audiobandwidth>cucm.audiobandwidth</audiobandwidth>
+				<videobandwidth>cucm.videobandwidth</videobandwidth>
+			</location>
+			<region>
+				<name>'R_'+cucm.sitename</name>
+				<defaultcodec>''</defaultcodec>
+				<videobandwidth>'384'</videobandwidth>
+				<g711>'R_'+cucm.sitename</g711>
+				<g711>'CERTI_G711_Servers'</g711>
+				<g711>'VCS'</g711>
+			</region>
+			<devicepool>
+				<name>'DP_'+cucm.sitename</name>
+				<region>'R_'+cucm.sitename</region>
+				<location>'L_'+cucm.sitename</location>
+				<datetimesetting>'France'</datetimesetting>
+				<mediaressourcegrouplist>'MRGL_'+cucm.sitename</mediaressourcegrouplist>
+				<networklocale>'France'</networklocale>
+				<srstreference>'Disable'</srstreference>
+				<callmanagergroup>site.cmg</callmanagergroup>
+				<localroutegroup>'RG_'+*4*cucm.sitename+'01'</localroutegroup>
+				<physicallocation>'PL_'+cucm.sitename</physicallocation>
+				<devicemobilitygroup>'dmg_France'</devicemobilitygroup>
+				<devicemobilitycss>'css_device_'+cucm.sitename</devicemobilitycss>
+			</devicepool>
+			<mediaressourcegrouplist>
+				<name>'MRGL_'+cucm.sitename</name>
+				<member>'MRG_CFB_CentralSite2'</member><!--One or more members-->
+				<member>'MRG_CFB_CentralSite'</member><!--One or more members-->
+				<member>'MRG_MOH-ANN_CentralSite2'</member><!--One or more members-->
+				<member>'MRG_MOH-ANN_CentralSite1'</member><!--One or more members-->
+			</mediaressourcegrouplist>
+			<partition>
+				<name>'p_site_'+cucm.sitename</name>
+				<description>'p_site'+cucm.sitename</description>
+			</partition>
+			<callingsearchspace>
+				<name>'css_device_'+cucm.sitename</name>
+				<description>'css_device_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_site_'+cucm.sitename</P>
+				<P>'p_cuc'</P>
+				<P>'p_fr_dialplan_btip'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+			</callingsearchspace>
+			<callingsearchspace>
+				<name>'css_device_ra_'+cucm.sitename</name>
+				<description>'css_device_ra_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_ra'</P>
+				<P>'p_fr_dialplan_local'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+			</callingsearchspace>
+			<callingsearchspace>
+				<name>'css_device_ra_'+cucm.sitename+'_Prosodie'</name>
+				<description>'css_device_ra_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<P>'p_ra'</P>
+				<P>'p_system'</P>
+				<P>'p_internalphone'</P>
+				<P>'p_intercluster'</P>
+				<P>'p_cuc'</P>
+			</callingsearchspace>
+			<vg>
+				<name>'SKIGW'+cucm.mac*10*</name>
+				<description>'VG_'+cucm.sitename+'_'+cucm.sitedescription</description>
+				<product>cnaf.voicegatewaytype</product>
+				<protocol>'SCCP'</protocol>
+				<callmanagergroupname>site.cmg</callmanagergroupname>
+				<t38enable>'true'</t38enable>
+			</vg>
+			<translationpattern>
+				<pattern>'11[259]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'0.11[259]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>'PreDot'</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'1[578]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'0.1[578]'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_user_fr_emergency_local'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>cucm.mainnumber</callingpartytransformmask>
+				<discarddigits>'PreDot'</discarddigits>
+				<calledpartytransformmask>''</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'*XXXX'</pattern>
+				<description>'Num_local_site_'+cucm.sitename</description>
+				<routepartition>'p_site_'+cucm.sitename</routepartition>
+				<callingsearchspace>'css_internal'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>''</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>cucm.internalprefix+'XXXX'</calledpartytransformmask>
+			</translationpattern>
+			<translationpattern>
+				<pattern>'\'+cnaf.sdarange</pattern><!--cnaf.sdarange is a special regex. It means that this particular translation pattern has to be duplicate as many times as the number of sda range-->
+				<description>'Forcage '+cucm.sitedescription+' '+cucm.sitename</description>
+				<routepartition>'p_forcedonnet'</routepartition>
+				<callingsearchspace>'css_internal'</callingsearchspace>
+				<urgentpriority>'true'</urgentpriority><!--true,false-->
+				<usecallingpartyphonemask>Off</usecallingpartyphonemask><!--Off,On-->
+				<callingpartytransformmask>''</callingpartytransformmask>
+				<discarddigits>''</discarddigits>
+				<calledpartytransformmask>cucm.internalprefix+'XXXX'</calledpartytransformmask>
+			</translationpattern>
+			<physicallocation>
+				<name>'PL_'+cucm.sitename</name>
+				<description>cucm.sitename+' '+cucm.sitedescription</description>
+			</physicallocation>
+			<devicemobilityinfo>
+				<name>'Net_'+cucm.sitename+'-Phone'</name>
+				<subnet>*1S/*cucm.voicenetworkip</subnet>
+				<subnetmask>*2S/*cucm.voicenetworkip</subnetmask><!--Has to be a number of bit-->
+				<devicepool>'DP_'+cucm.sitename</devicepool><!--One or more device pool-->
+			</devicemobilityinfo>
+			<devicemobilityinfo>
+				<name>'Net_'+cucm.sitename+'-CUPC'</name>
+				<subnet>*1S/*cucm.datanetworkip</subnet>
+				<subnetmask>*2S/*cucm.datanetworkip</subnetmask><!--Has to be a number of bit-->
+				<devicepool>'DP_'+cucm.sitename</devicepool><!--One or more device pool-->
+			</devicemobilityinfo>
+		</site>
+	</sites>
+</xml>

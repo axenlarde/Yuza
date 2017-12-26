@@ -1,0 +1,60 @@
+<!--
+File used to define how the csv file is generated
+
+This file is also using "Matchers" and regex
+-->
+<xml>
+	<rows>
+		<row>
+			<header>QUICKCREATE</header>
+			<header>user</header>
+			<header></header>
+			<header></header>
+			<header>1</header>
+		</row>
+		<row><!--Only the last row of this file is processed. The previous ones are just added as additionnal headers-->
+			<header>[User_firstName]:*1M**C*cucm.firstname</header>
+			<header>[User_lastName]:*M**C*cucm.lastname</header>
+			<header>[departmentId]:site.department</header>
+			<header>[QUICKCREATE_ECOSYSTEM_SELECTOR]:'CUCM8.5-1'</header>
+			<header>[User_userId]:*CRUserID*cucm.userid</header>
+			<header>[User_userLanguage]:'Français'</header>
+			<header>[profileId]:*LFProfile*cucm.userprofil</header>
+			<header>[User_param3]:'CUPC'</header>
+			<header>[User_lineMaxNumCalls]:cucm.maxcalls</header>
+			<header>[CUPS_QUICKCREATE_SELECT]:'CUPS-Certi1'</header>
+			<header>[Line_directoryNumber]:cucm.linenumber</header>
+			<header>[Line_externalPhoneNumber]:cucm.externalphonenumber</header>
+			<header>[Line_css]:*LFCSS*cucm.callrestriction</header>
+			<header>[Line_callForwardAllCss]:*LFCSS*cucm.forwardrestriction</header>
+			<header>[Line_callForwardBusyToVoiceMail]:''</header>
+			<header>[Line_callForwardBusyCss]:''</header>
+			<header>[Line_callForwardBusyDest]:cucm.forwardbusyext</header>
+			<header>[Line_callForwardBusyIntToVoiceMail]:''</header>
+			<header>[Line_callForwardBusyIntCss]:''</header>
+			<header>[Line_callForwardBusyIntDest]:cucm.forwardbusyint</header>
+			<header>[Line_callForwardNoAnswerToVoiceMail]:''</header>
+			<header>[Line_callForwardNoAnswerCss]:''</header>
+			<header>[Line_callForwardNoAnswerDest]:cucm.forwardnoanext</header>
+			<header>[Line_callForwardNoAnswerIntToVoiceMail]:''</header>
+			<header>[Line_callForwardNoAnswerIntCss]:''</header>
+			<header>[Line_callForwardNoAnswerIntDest]:cucm.forwardnoanint</header>
+			<header>[Line_callForwardNotRegisteredToVoiceMail]:''</header>
+			<header>[Line_callForwardNotRegisteredCss]:''</header>
+			<header>[Line_callForwardNotRegisteredDest]:cucm.forwardunr</header>
+			<header>[Line_callForwardNotRegisteredIntToVoiceMail]:''</header>
+			<header>[Line_callForwardNotRegisteredIntCss]:''</header>
+			<header>[Line_callForwardNotRegisteredIntDest]:cucm.forwardunr</header>
+			<header>[CHOOSE_MEVOS_QUICKCREATE_SELECT]:'Unity connection Cluster1'</header>
+			<header>[QUICKCREATE_ACTIVATE_DEVICE]:'Oui'</header>
+			<header>[Device_deviceKind]:'Device'</header>
+			<header>[Device_ciscoName]:*M**C*cucm.mac</header>
+			<header>[Device_model]:*LFPhone*cucm.phonetype1</header>
+			<header>[Device_product]:*LFPhone*cucm.phonetype1</header>
+			<header>[Device_phoneButtonTemplate]:''</header>
+			<header>[Device_expansionModule1]:''</header>
+			<header>[Line_callPickupGroupName]:cucm.pickupuser</header>
+			<header>[User_param1]:''</header><!--DECT-->
+		</row>
+	</rows>
+</xml>

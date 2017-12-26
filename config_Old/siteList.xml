@@ -1,0 +1,620 @@
+<xml>
+	<sites>
+		<site>
+			<name>121-ANT-CSGOURGAN</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFRODEZ/121-ANT-CSGOURGAN</department>
+		</site>
+		<site>
+			<name>121-ANT-DECAZEVILL</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFRODEZ/121-ANT-DECAZEVILL</department>
+		</site>
+		<site>
+			<name>121-ANT-ONETCHATEA</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFRODEZ/121-ANT-ONETCHATEA</department>
+		</site>
+		<site>
+			<name>121-ANT-STELOI</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFRODEZ/121-ANT-STELOI</department>
+		</site>
+		<site>
+			<name>121-ANT-VILLEFRANC</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFRODEZ/121-ANT-VILLEFRANC</department>
+		</site>
+		<site>
+			<name>311-ANT-HGEMPALOT</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFTOULOUSE/311-ANT-HGEMPALOT</department>
+		</site>
+		<site>
+			<name>311-ANT-HGREYNERIE</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFTOULOUSE/311-ANT-HGREYNERIE</department>
+		</site>
+		<site>
+			<name>331-ANT-FLOIRAC</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFBORDEAUX/331-ANT-FLOIRAC</department>
+		</site>
+		<site>
+			<name>331-ANT-LIBOURNE</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFBORDEAUX/331-ANT-LIBOURNE</department>
+		</site>
+		<site>
+			<name>331-ANT-MERIGNAC</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFBORDEAUX/331-ANT-MERIGNAC</department>
+		</site>
+		<site>
+			<name>331-ANT-PRLANGON</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFBORDEAUX/331-ANT-PRLANGON</department>
+		</site>
+		<site>
+			<name>331-ANT-PRLORMONT</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFBORDEAUX/331-ANT-PRLORMONT</department>
+		</site>
+		<site>
+			<name>351-CAF-RENNES</name>
+			<certi>CERTIBN</certi>
+			<type>type1</type>
+			<cmg>CMG-S4S8</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIBN/CAFRENNES/351-CAF-RENNES</department>
+		</site>
+		<site>
+			<name>441-ANT-ANCENIS</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-ANCENIS</department>
+		</site>
+		<site>
+			<name>441-ANT-BLAIN</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-BLAIN</department>
+		</site>
+		<site>
+			<name>441-ANT-CHATEAUBRI</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-CHATEAUBRI</department>
+		</site>
+		<site>
+			<name>441-ANT-GUERANDE</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-GUERANDE</department>
+		</site>
+		<site>
+			<name>441-ANT-NANTESBERL</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-NANTESBERL</department>
+		</site>
+		<site>
+			<name>441-ANT-NANTESNORD</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-NANTESNORD</department>
+		</site>
+		<site>
+			<name>441-ANT-REZE</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLE-MANS/441-ANT-REZE</department>
+		</site>
+		<site>
+			<name>441-ANT-STHERBLAIN</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-STHERBLAIN</department>
+		</site>
+		<site>
+			<name>441-ANT-STNAZAIRE2</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-STNAZAIRE2</department>
+		</site>
+		<site>
+			<name>441-ANT-STPHILBERT</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-STPHILBERT</department>
+		</site>
+		<site>
+			<name>441-ANT-VALLET</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-VALLET</department>
+		</site>
+		<site>
+			<name>441-ANT-VERTOU</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-ANT-VERTOU</department>
+		</site>
+		<site>
+			<name>441-CAF-NANTES</name>
+			<certi>AMICAM</certi>
+			<type>type1</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFNANTES/441-CAF-NANTES</department>
+		</site>
+		<site>
+			<name>451-ANT-GIEN</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFORLEANS/451-ANT-GIEN</department>
+		</site>
+		<site>
+			<name>451-ANT-PITHIVIER</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFORLEANS/451-ANT-PITHIVIER</department>
+		</site>
+		<site>
+			<name>721-ANT-BEAUMONT</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLE-MANS/721-ANT-BEAUMONT</department>
+		</site>
+		<site>
+			<name>721-ANT-BELLEVUE</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLE-MANS/721-ANT-BELLEVUE</department>
+		</site>
+		<site>
+			<name>721-ANT-CHATEAU</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLE-MANS/721-ANT-CHATEAU</department>
+		</site>
+		<site>
+			<name>721-ANT-FERTEBERNA</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLE-MANS/721-ANT-FERTEBERNA</department>
+		</site>
+		<site>
+			<name>721-ANT-GRAND_LUCE</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLE-MANS/721-ANT-GRAND_LUCE</department>
+		</site>
+		<site>
+			<name>721-ANT-MAMERS</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLE-MANS/721-ANT-MAMERS</department>
+		</site>
+		<site>
+			<name>721-ANT-PONTLIEUE</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLE-MANS/721-ANT-PONTLIEUE</department>
+		</site>
+		<site>
+			<name>598-ANT-ST-ANDRE</name>
+			<certi>CERTIN</certi>
+			<type>type2</type>
+			<cmg>CMG-S10S14</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIN/CAFNORD/598-ANT-ST-ANDRE</department>
+		</site>
+		<site>
+			<name>631-ANT-STJACQUES</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIRA/CAFCLERMONT-FD/631-ANT-STJACQUES</department>
+		</site>
+		<site>
+			<name>631-ANT-THIERS</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIRA/CAFCLERMONT-FD/631-ANT-THIERS</department>
+		</site>
+		<site>
+			<name>741-ANT-ANNEMASSE</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIRA/CAFANNECY/741-ANT-ANNEMASSE</department>
+		</site>
+		<site>
+			<name>741-ANT-BONNEVILL2</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIRA/CAFANNECY/741-ANT-BONNEVILL2</department>
+		</site>
+		<site>
+			<name>741-ANT-CLUSES</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIRA/CAFANNECY/741-ANT-CLUSES</department>
+		</site>
+		<site>
+			<name>741-ANT-THONON</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIRA/CAFANNECY/741-ANT-THONON</department>
+		</site>
+		<site>
+			<name>831-ANT-BAUCAIRE</name>
+			<certi>C2R</certi>
+			<type>type1</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFTOULON/831-ANT-BAUCAIRE</department>
+		</site>
+		<site>
+			<name>831-ANT-BRIGNOLES2</name>
+			<certi>C2R</certi>
+			<type>type2</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFTOULON/831-ANT-BRIGNOLES2</department>
+		</site>
+		<site>
+			<name>831-ANT-DRAGUIGNAN</name>
+			<certi>C2R</certi>
+			<type>type2</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFTOULON/831-ANT-DRAGUIGNAN</department>
+		</site>
+		<site>
+			<name>831-ANT-FREJUS2</name>
+			<certi>C2R</certi>
+			<type>type2</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFTOULON/831-ANT-FREJUS2</department>
+		</site>
+		<site>
+			<name>831-ANT-LAGARDE</name>
+			<certi>C2R</certi>
+			<type>type2</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFTOULON/831-ANT-LAGARDE</department>
+		</site>
+		<site>
+			<name>831-ANT-RACINE</name>
+			<certi>C2R</certi>
+			<type>type1</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFTOULON/831-ANT-RACINE</department>
+		</site>
+		<site>
+			<name>831-CAF-TOULON</name>
+			<certi>C2R</certi>
+			<type>type1</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFTOULON/831-CAF-TOULON</department>
+		</site>
+		<site>
+			<name>131-ANT-MARTIGUES</name>
+			<certi>C2R</certi>
+			<type>type2</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMARSEILLE/131-ANT-MARTIGUES</department>
+		</site>
+		<site>
+			<name>131-ANT-STLOUIS</name>
+			<certi>C2R</certi>
+			<type>type2</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMARSEILLE/131-ANT-STLOUIS</department>
+		</site>
+		<site>
+			<name>972-ANT-DILLON</name>
+			<certi>C2R</certi>
+			<type>type3</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMARTINIQUE/972-ANT-DILLON</department>
+		</site>
+		<site>
+			<name>972-ANT-LEMARIN</name>
+			<certi>C2R</certi>
+			<type>type3</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMARTINIQUE/972-ANT-LEMARIN</department>
+		</site>
+		<site>
+			<name>972-ANT-PELLETIER</name>
+			<certi>C2R</certi>
+			<type>type3</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMARTINIQUE/972-ANT-PELLETIER</department>
+		</site>
+		<site>
+			<name>972-ANT-RS_ADIGERY</name>
+			<certi>C2R</certi>
+			<type>type3</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMARTINIQUE/972-ANT-RS_ADIGERY</department>
+		</site>
+		<site>
+			<name>972-CAF-MARTINIQUE</name>
+			<certi>C2R</certi>
+			<type>type1</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMARTINIQUE/972-CAF-MARTINIQUE</department>
+		</site>
+		<site>
+			<name>973-ANT-KOUROU</name>
+			<certi>C2R</certi>
+			<type>type1</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFGUYANE/973-ANT-KOUROU</department>
+		</site>
+		<site>
+			<name>973-ANT-MATOURY2</name>
+			<certi>C2R</certi>
+			<type>type3</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFGUYANE/973-ANT-MATOURY2</department>
+		</site>
+		<site>
+			<name>973-ANT-STLAURENT</name>
+			<certi>C2R</certi>
+			<type>type1</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFGUYANE/973-ANT-STLAURENT</department>
+		</site>
+		<site>
+			<name>973-CAF-GUYANE</name>
+			<certi>C2R</certi>
+			<type>type1</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFGUYANE/973-CAF-GUYANE</department>
+		</site>
+		<site>
+			<name>920-ANT-IRFAF</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CREATIF/CAFNANTERRE/920-ANT-IRFAF</department>
+		</site>
+		<site>
+			<name>931-ANT-PASCCLICHY</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CREATIF/CAFROSNY/931-ANT-PASCCLICHY</department>
+		</site>
+		<site>
+			<name>931-ANT-PASMONTREU</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CREATIF/CAFROSNY/931-ANT-PASMONTREU</department>
+		</site>
+		<site>
+			<name>191-ANT-USSEL</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFBRIVE/191-ANT-USSEL</department>
+		</site>
+		<site>
+			<name>976-ANT-AnnexeETS</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMAYOTTE/976-ANT-AnnexeETS</department>
+		</site>
+		<site>
+			<name>976-CAF-MAYOTTE</name>
+			<certi>CREATIF</certi>
+			<type>type1</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMAYOTTE/976-CAF-MAYOTTE</department>
+		</site>
+		<site>
+			<name>241-ANT-BERGERAC</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFPERIGUEUX/241-ANT-BERGERAC</department>
+		</site>
+		<site>
+			<name>241-ANT-CHAMIERS</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFPERIGUEUX/241-ANT-CHAMIERS</department>
+		</site>
+		<site>
+			<name>241-ANT-MONTPON</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFPERIGUEUX/241-ANT-MONTPON</department>
+		</site>
+		<site>
+			<name>241-ANT-SARLAT</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFPERIGUEUX/241-ANT-SARLAT</department>
+		</site>
+		<site>
+			<name>241-CAF-PERIGUEUX</name>
+			<certi>CREATIF</certi>
+			<type>type1</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFPERIGUEUX/241-CAF-PERIGUEUX</department>
+		</site>
+		<site>
+			<name>331-ANT-LATESTE</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFBORDEAUX/331-ANT-LATESTE</department>
+		</site>
+		<site>
+			<name>751-ANT-CSTANGER</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CREATIF/CAFPARIS/751-ANT-CSTANGER</department>
+		</site>
+		<site>
+			<name>49N-CNE-LYONRCT1</name>
+			<certi>AMICAM</certi>
+			<type>type1</type>
+			<cmg>CMG-S1S2</cmg>
+			<department>/Nationale/CNEDI/CNEDIRA/49N-CNE-LYONRCT1</department>
+		</site>
+		<site>
+			<name>49N-CNE-LYONRCT3</name>
+			<certi>AMICAM</certi>
+			<type>type1</type>
+			<cmg>CMG-S1S2</cmg>
+			<department>/Nationale/CNEDI/CNEDIRA/49N-CNE-LYONRCT3</department>
+		</site>
+		<site>
+			<name>921-ANT-MALABRY</name>
+			<certi>CREATIF</certi>
+			<type>type2</type>
+			<cmg>CMG-S12S16</cmg>
+			<department>/Nationale/CAF-CERTI/Region CREATIF/CAFNANTERRE/921-ANT-MALABRY</department>
+		</site>
+		<site>
+			<name>011-ANT-MSA</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/CERTIRA/011-ANT-MSA</department>
+		</site>
+		<site>
+			<name>59E-CER-VALENCIENNES-TYP</name>
+			<certi>Exemple : AMICAM</certi>
+			<type>type1</type>
+			<cmg>Exemple : CMG-S1S5</cmg>
+			<department>Exemple : /Nationale/CNEDI/CNEDIRA/59E-CER-VALENCIENNES-TYP</department>
+		</site>
+		<site>
+			<name>972-ANT-CGS-STPIER</name>
+			<certi>C2R</certi>
+			<type>type3</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFMARTINIQUE/972-ANT-CGS-STPIER</department>
+		</site>
+		<site>
+			<name>69N-CNE-LYON-REC</name>
+			<certi>CNEDIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S2</cmg>
+			<department>/Nationale/CNEDI/CNEDIRA/69N-CNE-LYON-REC</department>
+		</site>
+		<site>
+			<name>171-ANT-VILLENEUVE</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFLA-ROCHELLE/171-ANT-VILLENEUVE</department>
+		</site>
+		<site>
+			<name>841-ANT-ORANGE</name>
+			<certi>CERTIAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S2S6</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIAM/CAFAVIGNON/841-ANT-ORANGE</department>
+		</site>
+		<site>
+			<name>031-ANT-ACCUEIL</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIRA/CAFMOULINS/031-ANT-ACCUEIL</department>
+		</site>
+		<site>
+			<name>Halte Garderie EMPALOT</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/CERTIA/CAFTOULOUSE/311-ANT-HGEMPALOT</department>
+		</site>
+		<site>
+			<name>031-CAF-MOULINSCITY</name>
+			<certi>CERTIRA</certi>
+			<type>type2</type>
+			<cmg>CMG-S11S15</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIRA/CAFMOULINS/031-CAF-MOULINSCITY</department>
+		</site>
+		<site>
+			<name>851-ANT-STGILLES</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CAF-CERTI/Region AMICAM/CAFLA-ROCHE-YON/851-ANT-STGILLES</department>
+		</site>
+		<site>
+			<name>311-ANT-REDOUTES</name>
+			<certi>CERTIA</certi>
+			<type>type2</type>
+			<cmg>CMG-S3S7</cmg>
+			<department>/Nationale/CAF-CERTI/Region CERTIA/CAFTOULOUSE/311-ANT-REDOUTES/Nationale/CAF-CERTI/Region CERTIA/CAFTOULOUSE/311-ANT-REDOUTES</department>
+		</site>
+		<site>
+			<name>428-ANT-RIVEDEGIER</name>
+			<certi>AMICAM</certi>
+			<type>type2</type>
+			<cmg>CMG-S1S5</cmg>
+			<department>/Nationale/CNEDI/CNEDIRA/428-ANT-RIVEDEGIER</department>
+		</site>
+	</sites>
+</xml>

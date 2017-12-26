@@ -1,0 +1,32 @@
+<!--
+File used to define how the csv file is generated
+
+This file is also using "Matchers" and regex
+-->
+<xml>
+	<rows>
+		<row>
+			<header>CREATE_UPDATE</header>
+			<header>numberrange</header>
+			<header></header>
+			<header></header>
+			<header>0</header>
+		</row>
+		<row><!--Only the last row of this file is processed. The previous ones are just added as additionnal headers-->
+			<header>[COMPONENT_auxiliaryId]:''</header>
+			<header>[departmentId]:site.department</header>
+			<header>[ECOSYSTEM]:'NumberingPlan'</header>
+			<header>[COMPONENT_description]:cucm.sitedescription</header>
+			<header>[COMPONENT_domainName]:''</header>
+			<header>[COMPONENT_firstNumber]:''</header>
+			<header>[COMPONENT_lastNumber]:''</header>
+			<header>[COMPONENT_category]:'DDI'</header>
+			<header>[COMPONENT_generationAlgorithm]:'The first available'</header>
+			<header>[COMPONENT_ddiNumStatus]:'None'</header>
+			<header>[COMPONENT_ddiNumHasList]:'No'</header>
+			<header>[COMPONENT_externalNumStatus]:'Fixed'</header>
+			<header>[COMPONENT_externalNum]:''</header>
+			<header>[COMPONENT_displayedNumberHasList]:'No'</header>
+		</row><!--It is not possible to add another row after this point-->
+	</rows>
+</xml>

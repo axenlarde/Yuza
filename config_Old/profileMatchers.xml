@@ -1,0 +1,37 @@
+<xml>
+	<profiles>
+		<profile>
+			<match>Agent_TA</match>
+			<replaceby>AGENT</replaceby>
+		</profile>
+		<profile>
+			<match>Bureau</match>
+			<replaceby>BUREAU</replaceby>
+		</profile>
+		<profile>
+			<match>Directeur</match>
+			<replaceby>MANAGER</replaceby>
+		</profile>
+		<profile>
+			<match>LibreService</match>
+			<replaceby>LIBRE-SERVICE</replaceby>
+		</profile>
+		<profile>
+			<match>SalledeReunion</match>
+			<replaceby>SALLE DE REUNION</replaceby>
+		</profile>
+		<profile>
+			<match>Secretaire</match>
+			<replaceby>SECRETAIRE</replaceby>
+		</profile>
+		<profile>
+			<match>Standard</match>
+			<replaceby>STANDARD</replaceby>
+		</profile>
+		<profile>
+			<match>Analogique</match>
+			<replaceby>AUDIOCODE (Non QuickCreate)</replaceby>
+		</profile>
+	</profiles>
+</xml>
+

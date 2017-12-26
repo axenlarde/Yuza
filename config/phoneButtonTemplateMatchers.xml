@@ -1,0 +1,41 @@
+<xml>
+	<phones>
+		<phone>
+			<match>6921</match>
+			<replaceby>Standard 6921 SIP</replaceby>
+		</phone>
+		<phone>
+			<match>7821</match>
+			<replaceby>Standard 7821 SIP</replaceby>
+		</phone>		
+		<phone>
+			<match>7962</match>
+			<replaceby>Standard 7962G SIP</replaceby>
+		</phone>
+		<phone>
+			<match>7965</match>
+			<replaceby>Standard 7965 SIP</replaceby>
+		</phone>
+		<phone>
+			<match>7937</match>
+			<replaceby>Standard 7937</replaceby>
+		</phone>
+		<phone>
+			<match>8831</match>
+			<replaceby>Standard 8831 SIP</replaceby>
+		</phone>
+		<phone>
+			<match>JABBER</match>
+			<replaceby>Standard Client Services Framework</replaceby>
+		</phone>
+		<phone>
+			<match>DECT</match>
+			<replaceby>Third-party SIP Device (Basic)</replaceby>
+		</phone>
+		<phone>
+			<match>ANALOG</match>
+			<replaceby>Standard analog</replaceby>
+		</phone>
+	</phones>
+</xml>
+

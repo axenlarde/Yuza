@@ -1,0 +1,190 @@
+<languages>
+	<language>
+		<misc>
+			<name>english</name>
+		</misc>
+		<values>
+			<!--Misc-->
+			<button1>Select</button1>
+			<button2>Submit</button2>
+			<button3>Cancel</button3>
+			<instruction1>Please select the collection file</instruction1>
+			<instruction2>Please select the directory which contains the collection file</instruction2>
+			<errorlowercase>It has not been possible to set the lower case for the desired value</errorlowercase>
+			<advicelowercase>Check if the value is long enough</advicelowercase>
+			<errorhighercase>It has not been possible to set the higher case for the desired value</errorhighercase>
+			<advicehighercase>Check if the value is long enough</advicehighercase>
+			<errornumber>It has not been possible to shrink the desired value</errornumber>
+			<advicenumber>Check if the value is long enough</advicenumber>
+			<cucmunreachableprohibition>The CUCM is unreachable, it is not possible to proceed any further !</cucmunreachableprohibition>
+			<errordiscovery>An error occured while discovering the site</errordiscovery>
+			<error>Error</error>
+			<maccollectionquestion>Do you want to proceed with the Mac Collection ?</maccollectionquestion>
+			<injectionquestion>Do you want to proceed with the injection ?</injectionquestion>
+			<deletionquestion>Do you want to proceed with the deletion ?</deletionquestion>
+			<csvcreationquestion>Do you want to proceed with the creation of the csv files ?</csvcreationquestion>
+			<sitealreadyinjected>The site already exist. Are you sure you want to inject it again ? The existing items will not be updated</sitealreadyinjected>
+			<sitealreadydeleted>The site doesn't exist. Are you sure you want to try the deletion ?</sitealreadydeleted>
+			<siteinjectionsuccess>The site injection ended successfully</siteinjectionsuccess>
+			<sitedeletionsuccess>The site deletion ended successfully</sitedeletionsuccess>
+			<csvcreationsuccess>The creation of the following csv files ended with success : </csvcreationsuccess>
+			<csvusercreationnodata>There is no data to process for the creation of a user csv file. The mac addresses are maybe not in the collection file</csvusercreationnodata>
+			<phoneinjectionsuccess>The injection of the temporary phones ended with success</phoneinjectionsuccess>
+			<userinjectionsuccess>The injection of the temporary user items ended with success</userinjectionsuccess>
+			<sdinjectionsuccess>The injection of the Speed Dial and BLF ended with success</sdinjectionsuccess>
+			<sdnothingtoinject>There is neither Speed dial nor BLF to inject</sdnothingtoinject>
+			<userdeletionsuccess>The deletion of the temporary user items ended with success</userdeletionsuccess>
+			<injectionerror>An error occured : </injectionerror>
+			<injectionanswerno>As a reminder, without the site you can not inject the users.</injectionanswerno>
+			<didpatternuserquestion>What is going to be the 4 digits suffix for the following DID range : </didpatternuserquestion>
+			<didpatternusercancel>Because you skip this step, the items related to the DID ranges won't be treated</didpatternusercancel>
+			<generalusererrordisplay>The following error occurs during the injection process : </generalusererrordisplay>
+			<pleasewait>Please Wait</pleasewait>
+			<checkquestion>Do you want to launch the injection check ?</checkquestion>
+			<checksuccess>Down here is what we found in the system :</checksuccess>
+			<!--User interface-->
+			<yes>yes</yes>
+			<no>no</no>
+			<example>Example</example>
+			<menuaction>Action</menuaction>
+			<menunewsite>New site</menunewsite>
+			<menunewmultiplesite>New Multiple site</menunewmultiplesite>
+			<menunewmultiplesiteinjection>Injection</menunewmultiplesiteinjection>
+			<menunewmultiplesitecsv>CSV file Creation</menunewmultiplesitecsv>
+			<menunewmultiplesiteinspection>Inspection</menunewmultiplesiteinspection>
+			<menusiteinjection>Site injection</menusiteinjection>
+			<menusitedeletion>Site deletion</menusitedeletion>
+			<menutempphoneinjection>Temporary Phone Injection</menutempphoneinjection>
+			<menutempuserinjection>Temporary User Injection</menutempuserinjection>
+			<menumaccollection>Mac Collection</menumaccollection>
+			<menutempdatadeletion>Delete temporary data</menutempdatadeletion>
+			<menuexporttocsv>Export to csv for kurmi</menuexporttocsv>
+			<menusystemcheck>Check what is injected in the system</menusystemcheck>
+			<menuinjectsd>Inject Speed Dial and BLF</menuinjectsd>
+			<menuexit>Exit</menuexit>
+			<menumisc>Misc</menumisc>
+			<menuhelp>Help</menuhelp>
+			<menuabout>About</menuabout>
+			<sitestatusinjected>Site injected</sitestatusinjected>
+			<sitestatustobeinjected>Site has to be injected</sitestatustobeinjected>
+			<usercount>User count : </usercount>
+			<analogcount>Analog count : </analogcount>
+			<lgcount>Line group count : </lgcount>
+			<cpgcount>Call pickup group count : </cpgcount>
+			<newsitewindowtitle>Informations missing for the site </newsitewindowtitle>
+			<newsitewindowquestion>The site has not been found in the database. Please provide the needed informations to continue :</newsitewindowquestion>
+			<newsitewindowwarning>All the values have to be given</newsitewindowwarning>
+			<maccollectiontitle>Mac address collector</maccollectiontitle>
+			<maccollectionstatusinprogress>Collection in progress</maccollectionstatusinprogress>
+			<maccollectionstatusfinished>Collection finished</maccollectionstatusfinished>
+			<maccollectionmessagefinished>The Mac collection process is finished</maccollectionmessagefinished>
+			<checkresult>Injected items : </checkresult>
+			<checkresultmissing>Items still missing : </checkresultmissing>
+			<checkresultemailquestion>Would you like to send an email ?</checkresultemailquestion>
+			<help>To get any help about this software contact : alexandre.ratel@spie.com</help>
+			<about>About Yuza, author: RATEL Alexandre, contact: alexandre.ratel@spie.com</about>
+			<!--Email-->
+			<emailsentsuccess>An eMail has been sent with success</emailsentsuccess>
+			<emailreportsubject>Email from YUZA about this site : </emailreportsubject>
+			<emailreportcontentsite>The following site has been successfully configured in the CUCM : </emailreportcontentsite>
+			<emailreportcontentsitedeletion>Le site suivant a été supprimé avec succès du CUCM : </emailreportcontentsitedeletion>
+			<emailreportcontentcsv>The CSV files have been successfully generated with for the following site : </emailreportcontentcsv>
+			<emailreportcontentmac>All the MAC addresses have been successfully collected for the following site : </emailreportcontentmac>
+			<emailreportsystemcheck>Current injection status for the site </emailreportsystemcheck>
+		</values>
+	</language>
+	<language>
+		<misc>
+			<name>french</name>
+		</misc>
+		<values>
+			<!--Misc-->
+			<button1>Choisir</button1>
+			<button2>Valider</button2>
+			<button3>Annuler</button3>
+			<instruction1>Veuillez sélectionner le fichier de collecte</instruction1>
+			<instruction2>Veuillez sélectionner le répertoire qui contient les fichiers de collecte</instruction2>
+			<errorlowercase>Il n'a pas été possible de mettre en minuscule la valeure désirée</errorlowercase>
+			<advicelowercase>Vérifiez que la valeur est suffisament longue</advicelowercase>
+			<errorhighercase>Il n'a pas été possible de mettre en majuscule la valeure désirée</errorhighercase>
+			<advicehighercase>Vérifiez que la valeur est suffisament longue</advicehighercase>
+			<errornumber>Il n'a pas été possible de diminuer la valeure désirée</errornumber>
+			<advicenumber>Vérifiez que la valeur est suffisament longue</advicenumber>
+			<cucmunreachableprohibition>Le serveur CUCM est injoigniable, il n'est pas possible de continuer !</cucmunreachableprohibition>
+			<errordiscovery>Une erreur c'est produite durant la découverte du site</errordiscovery>
+			<error>Erreur</error>
+			<maccollectionquestion>Voulez-vous lancer la collecte d'adresses MAC ?</maccollectionquestion>
+			<injectionquestion>Voulez-vous lancer l'injection ?</injectionquestion>
+			<deletionquestion>Voulez-vous lancer la suppression ?</deletionquestion>
+			<csvcreationquestion>Voulez-vous lancer la création des fichiers CSV ?</csvcreationquestion>
+			<sitealreadyinjected>Le site existe déja. Etes-vous sûr de vouloir l'injecter de nouveau ? Les objets déja existant ne seront pas mis à jour</sitealreadyinjected>
+			<sitealreadydeleted>Le site n'existe pas. Etes-vous sûr de vouloir tenter la suppression ?</sitealreadydeleted>
+			<siteinjectionsuccess>L'injection du site s'est terminée avec succès</siteinjectionsuccess>
+			<sitedeletionsuccess>La suppression du site s'est terminée avec succès</sitedeletionsuccess>
+			<csvcreationsuccess>La création du fichiers CSV suivant s'est terminée avec succès : </csvcreationsuccess>
+			<csvusercreationnodata>Il n'y a pas de données disponible pour la création d'un fichier CSV utilisateur. Les adresses MAC ne sont peut-être pas renseignées dans le fichier de collecte</csvusercreationnodata>
+			<phoneinjectionsuccess>L'injection des téléphones temporaires s'est terminée avec succès</phoneinjectionsuccess>
+			<userinjectionsuccess>L'injection des données utilisateurs temporaires s'est terminée avec succès</userinjectionsuccess>
+			<sdinjectionsuccess>L'injection des Speed Dial et BLF s'est terminée avec succès</sdinjectionsuccess>
+			<sdnothingtoinject>Il n'y a aucun Speed Dial ou BLF à injecter</sdnothingtoinject>
+			<userdeletionsuccess>La suppression des données utilisateurs temporaires s'est términée avec succès</userdeletionsuccess>
+			<injectionerror>Une erreur est survenue : </injectionerror>
+			<injectionanswerno>Rappel : sans le site il n'est pas possible d'injecter les utilisateurs</injectionanswerno>
+			<didpatternuserquestion>Quel va être le suffixe à 4 chiffres pour la tranche SDA suivante : </didpatternuserquestion>
+			<didpatternusercancel>Puisque cette étape est ignorée, les objets relatifs aux tranches SDA ne seront pas traités</didpatternusercancel>
+			<generalusererrordisplay>L'erreur suivante est survenue durant le processus d'injection : </generalusererrordisplay>
+			<pleasewait>Veuillez patienter</pleasewait>
+			<checkquestion>Voulez-vous lancer la vérification de l'injection ?</checkquestion>
+			<checksuccess>Voici ce qui a été détecté dans le système :</checksuccess>
+			<!--User interface-->
+			<yes>oui</yes>
+			<no>non</no>
+			<example>Exemple</example>
+			<menuaction>Action</menuaction>
+			<menunewsite>Nouveau site</menunewsite>
+			<menunewmultiplesite>Nouveau site multiple</menunewmultiplesite>
+			<menunewmultiplesiteinjection>Injection</menunewmultiplesiteinjection>
+			<menunewmultiplesitecsv>Création des fichiers CSV</menunewmultiplesitecsv>
+			<menunewmultiplesiteinspection>Inspection</menunewmultiplesiteinspection>
+			<menusiteinjection>Injection du site</menusiteinjection>
+			<menusitedeletion>Suppression du site</menusitedeletion>
+			<menutempphoneinjection>Injection des téléphones temporaires</menutempphoneinjection>
+			<menutempuserinjection>Injection des utilisateurs temporaires</menutempuserinjection>
+			<menumaccollection>Collecte des adresses MAC</menumaccollection>
+			<menutempdatadeletion>Supression des données temporaires</menutempdatadeletion>
+			<menuexporttocsv>Création des fichiers csv pour Kurmi</menuexporttocsv>
+			<menusystemcheck>Vérifier ce qui est injecté dans le système</menusystemcheck>
+			<menuinjectsd>Injection des Speed Dial et BLF</menuinjectsd>
+			<menuexit>Quitter</menuexit>
+			<menumisc>Divers</menumisc>
+			<menuhelp>Aide</menuhelp>
+			<menuabout>About</menuabout>
+			<sitestatusinjected>Site injecté</sitestatusinjected>
+			<sitestatustobeinjected>Site non injecté</sitestatustobeinjected>
+			<usercount>Nombre d'utilisateurs : </usercount>
+			<analogcount>Nombre d'appareils analogique : </analogcount>
+			<lgcount>Nombre de groupements d'appels : </lgcount>
+			<cpgcount>Nombre de groupements d'interception : </cpgcount>
+			<newsitewindowtitle>Informations manquantes pour le site </newsitewindowtitle>
+			<newsitewindowquestion>Le site n'a pas été trouvé dans la base de données. Veuillez fournir les informations nécessaires pour continuer :</newsitewindowquestion>
+			<newsitewindowwarning>Toutes les valeurs doivent-être renseignées</newsitewindowwarning>
+			<maccollectiontitle>Collecteur d'adresses MAC</maccollectiontitle>
+			<maccollectionstatusinprogress>Collecte en cours</maccollectionstatusinprogress>
+			<maccollectionstatusfinished>Collecte terminée</maccollectionstatusfinished>
+			<maccollectionmessagefinished>La collecte des adresses Mac est terminée</maccollectionmessagefinished>
+			<checkresult>Eléments injectés : </checkresult>
+			<checkresultmissing>Eléments restant à injecter : </checkresultmissing>
+			<checkresultemailquestion>Voulez-vous envoyer un email ?</checkresultemailquestion>
+			<help>Pour obtenir de l'aide à propos de ce logiciel, contactez : alexandre.ratel@spie.com</help>
+			<about>A propos de YUZA, auteur: RATEL Alexandre, contacte: alexandre.ratel@spie.com</about>
+			<!--Email-->
+			<emailsentsuccess>Un email a été envoyé avec succès</emailsentsuccess>
+			<emailreportsubject>Email de YUZA à propos du site suivant : </emailreportsubject>
+			<emailreportcontentsite>Le site suivant a été configuré avec succès dans le CUCM : </emailreportcontentsite>
+			<emailreportcontentsitedeletion>Le site suivant a été supprimé avec succès du CUCM : </emailreportcontentsitedeletion>
+			<emailreportcontentcsv>Les fichiers CSV ont été générés avec succès pour le site suivant : </emailreportcontentcsv>
+			<emailreportcontentmac>Toutes les adresses MAC ont été collectées pour le site suivant : </emailreportcontentmac>
+			<emailreportsystemcheck>Etat actuel de l'injection du site </emailreportsystemcheck>
+		</values>
+	</language>
+</languages>

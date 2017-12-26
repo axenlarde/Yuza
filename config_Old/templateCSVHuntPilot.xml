@@ -1,0 +1,30 @@
+<!--
+File used to define how the csv file is generated
+
+This file is also using "Matchers" and regex
+-->
+<xml>
+	<rows>
+		<row>
+			<header>CREATE_UPDATE</header>
+			<header>ccmhuntpilot</header>
+			<header></header>
+			<header></header>
+			<header>0</header>
+		</row>
+		<row><!--Only the last row of this file is processed. The previous ones are just added as additionnal headers-->
+			<header>[COMPONENT_auxiliaryId]:''</header>
+			<header>[departmentId]:site.department</header>
+			<header>[ECOSYSTEM]:'HuntPilotCUCM8.5-1'</header>
+			<header>[COMPONENT_directoryNumber]:cucm.huntpilotnumber</header>
+			<header>[COMPONENT_partition]:'p_internalphone'</header>
+			<header>[COMPONENT_description]:'HP_'+cucm.huntpilotnumber</header>
+			<header>[COMPONENT_callPickupGroupName]:cucm.linegrouppickup</header>
+			<header>[COMPONENT_alertingName]:'HP_'+cucm.huntpilotnumber</header>
+			<header>[COMPONENT_asciialertingName]:'HP_'+cucm.huntpilotnumber</header>
+			<header>[COMPONENT_huntForwardNoAnswerDest]:cucm.linegroupforwardnoandest</header>
+			<header>[COMPONENT_huntForwardMaxHuntDuration]:cucm.linegroupoveralltimer</header>
+			<header>[COMPONENT_huntForwardBusyDest]:cucm.linegroupforwardbusydest</header>
+		</row><!--It is not possible to add another row after this point-->
+	</rows>
+</xml>

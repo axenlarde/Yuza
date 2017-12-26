@@ -1,0 +1,51 @@
+<xml>
+	<config>
+		<!--Misc-->
+		<log4j>DEBUG</log4j><!--Logging level : ERROR,INFO,DEBUG-->
+		<checkfreq>10000</checkfreq><!--user connection loging frequency. In milliseconds-->
+		<basedirectory>.\</basedirectory>
+		<language>french</language><!--french,english-->
+		<maxdataprocessed>1000</maxdataprocessed>
+		<!--Misc end-->
+		<!--Smtp parameters-->
+		<smtpemailport>25</smtpemailport>
+		<smtpemailprotocol>smtp</smtpemailprotocol>
+		<smtpemailserver>smtp.certiam.cnaf</smtpemailserver>
+		<smtpemail>yuza_noreply@certiam.cnaf</smtpemail>
+		<smtpemailpassword></smtpemailpassword>
+		<smtpemailadmin>alexandre.ratel@spie.com;pascal.barbey@spie.com;youssef.joudar@spie.com;metin.inal@spie.com</smtpemailadmin><!--One or more destinations separated by a ;-->
+		<smtpemailsendsite>true</smtpemailsendsite><!--true,false-->
+		<smtpemailsendcsv>false</smtpemailsendcsv><!--true,false-->
+		<smtpemailsendmac>false</smtpemailsendmac><!--true,false-->
+		<!--Smtp parameters end-->
+		<!--AXL parameters-->
+		<axlhost>10.0.1.172</axlhost><!--IP of the CUCM server-->
+		<axlport>8443</axlport><!--Port to contact the CUCM server using AXL-->
+		<axlversion>105</axlversion><!--85 or 105--><!--AXL version of the CUCM-->
+		<axlusername>AXL_Yuza</axlusername><!--AXL user name to contact the CUCM server-->
+		<axlpassword>CCMCisco92</axlpassword><!--Password of the AXL user in clear !!!!Warning : keep it secret!!!!-->
+		<!--AXL parameters end-->
+		<!--Spell cheking-->
+		<maxnumchar>30</maxnumchar><!--int-->
+		<replacefrenchchar>true</replacefrenchchar><!--true,false-->
+		<checkfortoolongvalue>true</checkfortoolongvalue><!--true,false-->
+		<!--Spell cheking end-->
+		<!--Site injection-->
+		<sitedidrangebehavior>askuser</sitedidrangebehavior><!--askuser,auto; if auto is choosen, the software is going to quess the did ranges by itself-->
+		<!--Site injection end-->
+		<!--CSV export-->
+		<csvseparator>;</csvseparator>
+		<csvsmartexport>false</csvsmartexport><!--true,false--><!--Mark an already exported value in the collection file-->
+		<csvmark>done</csvmark><!--Can be anything-->
+		<csvanalogenable>true</csvanalogenable><!--true,false-->
+		<csvpickupenable>true</csvpickupenable><!--true,false-->
+		<csvlinegroupenable>true</csvlinegroupenable><!--true,false-->
+		<csvdidrangesenable>true</csvdidrangesenable><!--true,false-->
+		<csvuseridcheckenable>true</csvuseridcheckenable><!--true,false-->
+		<csvmultipleuniquefile>true</csvmultipleuniquefile><!--true,false-->
+		<!--CSV export end-->
+		<!--User creation-->
+		<insidenumberrange>29919000:29919999</insidenumberrange>
+		<!--User creation end-->
+	</config>
+</xml>
